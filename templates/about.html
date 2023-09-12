@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}homepage{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<!-- About Us Content -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>About Us</h1>
+            <p>Welcome to Supermart, your one-stop supermarket for all your grocery needs. We are committed to providing our customers with the freshest and highest quality products at affordable prices.</p>
+            <p>Our team of dedicated professionals works tirelessly to ensure that our shelves are stocked with a wide variety of products to meet your every need. Whether you're looking for fresh produce, pantry staples, or specialty items, we've got you covered.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="supermarket-image.jpg" alt="Supermart Store" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}homepage{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<!-- Home Page Content -->
+<header class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">Layout Website</h1>
+        <p class="lead">I'm testing a one-man project on layouts.</p>
+        <a class="btn btn-primary btn-lg" href="/products" role="button">Go To Products</a>
+    </div>
+</header>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>ONE</h2>
+            <p>Save style</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>TWO</h2>
+            <p>Save structure</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>THREE</h2>
+            <p>Save time</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

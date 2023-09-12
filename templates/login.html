@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Supermart</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Login Page Content -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Login to Layout Website</h3>
+                    </div>
+                    <form action="{{ url_for('login')}}" method="POST" style="text-align: center; padding: 50px;">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" required><br><br>
+                    
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" required><br><br>
+                    
+                        <input type="submit">
+                    </form>
+                    
+                    {{msg}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
